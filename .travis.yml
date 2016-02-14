@@ -3,6 +3,5 @@ rvm:
 - 2.1
 install:
 - bundle install
-- npm i
 script:
 - rake book:build
