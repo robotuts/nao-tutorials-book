@@ -54,7 +54,7 @@ GEM
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
-    rake (10.5.0)
+    rake (11.1.1)
     ruby-rc4 (0.1.5)
     rubyzip (1.2.0)
     safe_yaml (1.0.4)
