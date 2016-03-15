@@ -5,3 +5,11 @@ install:
 - bundle install
 script:
 - rake book:build
+deploy:
+  provider: releases
+  api_key:
+    secure: aCpcLAunW9ZpVRNmWjXauE4ggyyy/pDE4okRQrurUrlzy/7S02wmT24F1W9B6qO4AVDuD1dmLdCYOBuM7QdXUIA8sdk/G9sLbQlnvtVGceI2Q9MsX8Z71eX4XxzMocRrObN5yVzln/RcUjPHHSEuV1q7Rrvx+CUT5J5VGG2TSWiZs14QNN4DqWUCnWI5FBN7Crs6l/5INkoheQGf+Sg4zzFt4luzy8sFyH+vrYksTBmJMnDsOttTBQAz/ie1IXUiB1fVlw2EpRYD2Et1JPcN4qzOWIYZy0DxiAvkQ2aGFlJs6dmTXfcwCzUJOIbBJ98Hne4Ii3XZPTIo7+J6hGOpPrWdEM0R3otxYyi/es9bdcQz3UzfA5/j7djI6a1zsSE+5a+8HT1BRhSZIkk0AKvE5/NhkNYj7PgMuBBsa1zXEx6rhEDt53cmT45ROSJtbh3g5Nzk+FFQBA8q5QnA2gkVvisGBj5wjxhGd+tX2jKr7B1BMoW5b7eeGhFGec9BplmaufhQfbR3bGvTux54i4UQBrxiY/EwRoBt/KtstWSVz2DnxB7ArUrM69ikhauXJL1DU6OvxAxnxYKLcze4PxnsE+28oCLL6ST1fw2jLRvKGgCAS8yjnQCPoqxuvomqmEPOYHylnzinpGVeuVivwptEgXzO56wFTqDhm+XHOtlUm9M=
+  file: book.pdf
+  skip_cleanup: true
+  on:
+    repo: robotuts/nao-tutorials-book
