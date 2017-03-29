@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "bento/debian-8.2"
+  config.vm.box = "bento/debian-8.7"
 
   # default browsersync ports
   config.vm.network :forwarded_port, guest: 3000, host: 3000
@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
     sudo apt-get -y install build-essential git ruby-full
     sudo gem update --system
     sudo gem install bundle
-    curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
     sudo apt-get install -y nodejs
     cd project
     bundle install
