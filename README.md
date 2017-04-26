@@ -1,3 +1,5 @@
+# DEPRECATED: check robotuts.guthub.io instead.
+
 [![Build Status](https://travis-ci.org/robotuts/nao-tutorials-book.svg?branch=master)](https://travis-ci.org/robotuts/nao-tutorials-book)
 [![Dependency Status](https://gemnasium.com/robotuts/nao-tutorials-book.svg)](https://gemnasium.com/robotuts/nao-tutorials-book)
 
